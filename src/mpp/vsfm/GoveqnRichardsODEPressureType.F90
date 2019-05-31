@@ -1306,7 +1306,7 @@ contains
           cur_cond => cur_cond%next
        enddo
 
-       num_avars_set = soe_avars_idx
+       num_avars_set = sum_conn
 
     case (AUXVAR_BC_OTR_GOVEQ)
 
@@ -1345,7 +1345,7 @@ contains
           cur_cond => cur_cond%next
        enddo
 
-       num_avars_set = soe_avars_idx
+       num_avars_set = sum_conn
 
     case default
        write(iulog,*) 'RichardsODESetDataInSOEAuxVar: soe_avar_type not supported'
